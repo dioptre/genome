@@ -15,4 +15,4 @@ pass
 #SELECT STRPOS(sequence, 'AGCTGGGATT') FROM genome WHERE STRPOS(sequence, 'AGCTGGGATT') > 0;
 #check if you have a gene at a position
 #for rs114525117
-#SELECT *, CASE WHEN substr(sequence, 759036+1, 2) = 'GG' THEN true ELSE false END AS is_rs114525117 FROM genome where id='1';
+#SELECT *, CASE WHEN substr(sequence, 759036, 2) = 'GG' THEN true ELSE false END AS is_rs114525117 FROM genome where id='1';
